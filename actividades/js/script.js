@@ -1,9 +1,13 @@
 
+
 const form = document.getElementById("form");
 const nombre= document.getElementById("nombre");
 const correo= document.getElementById("correo");
 const clave = document.getElementById("clave");
 const clave2 = document.getElementById("confirmarclave");
+const direccion = document.getElementById("direc");
+const cedula = document.getElementById("cedul");
+const barrio = document.getElementById("barr");
 
 form.addEventListener("submit", e =>{
 e.preventDefault();
@@ -15,6 +19,10 @@ const nombrevalor = nombre.value.trim();
 const correovalor = correo.value.trim();
 const clavevalor = clave.value.trim();
 const clave2valor = clave2.value.trim();
+const direc = direccion.value.trim();
+const cedu = cedula.value.trim();
+const bar = barrio.value.trim();
+
 
 if (nombrevalor === "") {
 setErrorInput(nombre, "El campo de nombre no puede estar vacio.");
@@ -22,6 +30,23 @@ setErrorInput(nombre, "El campo de nombre no puede estar vacio.");
 setSuccessInput(nombre);
 }
 
+if (cedu === ""){
+    setErrorInput(cedula, "El campo de nombre no puede estar vacio.");
+    }else {
+    setSuccessInput(cedula);
+    }
+
+if (direc === ""){
+    setErrorInput(direccion, "El campo de nombre no puede estar vacio.");
+    }else {
+    setSuccessInput(direccion);
+    }
+
+    if (bar === ""){
+        setErrorInput(barrio, "El campo de nombre no puede estar vacio.");
+        }else {
+        setSuccessInput(barrio);
+        }
 
 if(correovalor === ""){
     setErrorInput(correo, "El cambo correo no puede estar vacio.");
