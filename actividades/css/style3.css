@@ -10,7 +10,7 @@ justify-content: center;
 min-height: 100vh;
 margin: 0;
 font-family: "Open Sans", sans-serif;
-background-color: #ffb75e;
+background-color: #48dc00;
 }
 
 .container{
@@ -97,10 +97,10 @@ color: #e74c3c;
 }
 
 .form button {
-background-color: #f37335;
-border: 2px solid #f37335;
+background-color: #48dc00;
+border: 2px solid #48dc00;
 border-radius: 4px;
-color: #eee;
+color: #000;
 display: block;
 width: 100%;
 padding: 10px;
